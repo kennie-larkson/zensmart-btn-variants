@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonContainer from "./ButtonContainer";
+import "./App.css";
 
 function App() {
+  const data = {
+    text: "Close Shippment",
+    color: "whitesmoke",
+    weight: "bold"
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1
+        style={{
+          display: "flex",
+          marginTop: "2em",
+          alignItems: "center",
+          textAlign: "center",
+          marginLeft: "2em"
+        }}
+      >
+        Button Variants
+      </h1>
+
+      <ButtonContainer data={data} />
     </div>
   );
 }
